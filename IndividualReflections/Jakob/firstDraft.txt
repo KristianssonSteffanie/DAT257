@@ -1,0 +1,11 @@
+- what do I want to learn or understand better?
+I want to understand sprints better, during the exercises (MineTest and drawing) everything was so rushed it didn't feel like we executed the sprints properly. Some parts, mostly reflective and planning parts, were glossed over/skipped during the exercises in order to get more time for delivery. 
+
+- how can I help someone else or the entire team to learn something new?
+I can share my knowledge, and if someone doesn't understand something that I understand, try to explain it with other words. 
+
+- what is my contribution towards the team's use of scrum? 
+Following the guidelines/processes and making sure to execute the sprints properly without skipping the "boring" parts. 
+
+- what is my contribution towards the team's deliveries? 
+Doing my best to complete my tasks/user stories for every sprint, and if my tasks are too much to handle, try to break it down into sub-tasks to be finished across multiple sprints. 
