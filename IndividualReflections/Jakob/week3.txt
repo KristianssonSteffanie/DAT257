@@ -1,0 +1,18 @@
+This week we started setting up for the sprints, assigned a scrum master, wrote user stories and we also set up workspaces for everyone to start actually 
+writing some code. Wording the user stories turned out to be a bit difficult at first, but after some guidance we learned how to do it properly.
+We finished the friday meeting by assigning user stories for the first sprint which seemed to work fine, we were able to divide the project into smaller tasks that 
+could be worked on in parallel. 
+
+what do I want to learn or understand better?
+- Although writing user stories improved during the week, I still want to understand them in greater detail which will come naturally since we have more user stories
+to write in the future. 
+how can I help someone else, or the entire team, to learn something new?
+- By talking about it, the group atmosphere already seems great for this, it seems like we aren't afraid to ask questions if we are unsure about anything. 
+what is my contribution towards the team’s use of Scrum?
+- This week I contributed by writing user stories, from next week onwards I will contribute by finishing the user stories assigned to me and by coming up with more 
+user stories that add value to the customer. 
+what is my contribution towards the team’s deliveries?
+- This week my contribution was mostly setting up a Unity project on github and making sure everything worked as it should for everyone as I seemed to have the most 
+experience with Unity. From next week onwards I will contribute by not taking water over my head with workload and making sure I have at least some user stories finished. 
+To prevent taking on too many user stories or the user stories being too big in the future, I will use next week to try to get an understanding for how much time 
+something takes to implement. 
