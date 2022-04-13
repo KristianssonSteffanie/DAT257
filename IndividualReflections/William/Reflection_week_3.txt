@@ -1,0 +1,15 @@
+What do I want to learn or understand better?
+I want to learn more about c# since we are goint to write code in it. We will also use Unity which I have never used before so I look forward to learn it aswell. 
+	
+How can I help someone else, or the entire team, to learn something new?
+In the group we are not afraid to ask questions if it is something that one does not know that well and if I have the knowledge I will gladly try to help and explain
+this to the team members. The next sprint I will work togehter with Erik and I think we can learn many things from each other. 
+    
+What is my contribution towards the team’s use of Scrum?
+This week I have been scrum master and therefore I had more resposibility that we followed the scrum guidelines. In some cases we were on our way to do more than the 
+customer asked for(goldplating) but I stopped it there so we could focus on what the customer actually values. I have also controlled the meetings and made user
+stories that follow the format of "as an x I want Y because Z".
+    
+What is my contribution towards the team’s deliveries?
+Created user stories and made sure that they are not too big or not too vague. Also learnt a little how to work in Unity so it will be easier in the future. 
+Next week me and Erik are working on some user stories together and we aim to finish these so they follow the definition of done we as a group have decided.
