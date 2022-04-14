@@ -1,0 +1,19 @@
+This week we finished the scrum-plan and some userstories to start with. 
+We decided to work with C# because it is more simple when creating a 
+game and ther's plenty of help on google.
+
+what do I want to learn or understand better?
+To work with C#.
+To create userstories that are big/small/good enough.
+
+how can I help someone else, or the entire team, to learn something new?
+By talking and discussing about the problem and try to solve it toghether.
+
+what is my contribution towards the team’s use of Scrum?
+Right now i, just like everyone except the scrum-master, comes with ideas and 
+discuss where we're at in the timeline etc.
+
+what is my contribution towards the team’s deliveries?
+Checking at our meetings if everyone feels they have had enough time and done 
+everything they wanted or should have done, we also write to eachother 
+on facebook if we need help.
