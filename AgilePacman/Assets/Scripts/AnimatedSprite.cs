@@ -27,10 +27,12 @@ public class AnimatedSprite : MonoBehaviour
 
         animationFrame++;
 
+        // If looping through sprites, restart at frame 0
         if (animationFrame >= sprites.Length && loop) {
             animationFrame = 0;
         }
 
+        // check errors, make sure the index is in the array of sprites
         if (animationFrame >= 0 && animationFrame < sprites.Length) {
             spriteRenderer.sprite = sprites[animationFrame];
         }

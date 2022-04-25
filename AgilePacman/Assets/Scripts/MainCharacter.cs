@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Movement))]
-public class Pacman : MonoBehaviour
+public class MainCharacter : MonoBehaviour
 {
     public AnimatedSprite deathSequence;
     public SpriteRenderer spriteRenderer { get; private set; }
@@ -31,7 +31,7 @@ public class Pacman : MonoBehaviour
             movement.SetDirection(Vector2.right);
         }
 
-        // Rotate pacman to face the movement direction
+        // Rotate the main character to face the movement direction
         float angle = Mathf.Atan2(movement.direction.y, movement.direction.x);
         transform.rotation = Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward);
     }
