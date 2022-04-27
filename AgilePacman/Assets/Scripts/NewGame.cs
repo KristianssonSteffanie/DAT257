@@ -33,11 +33,11 @@ public class NewGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        button.GetComponentInChildren(Text).fontSize(36);
+        button.GetComponentInChildren<Text>().fontSize = 36;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        button.GetComponentInChildren(Text).fontSize(28);
+        button.GetComponentInChildren<Text>().fontSize = 28;
     }
 }

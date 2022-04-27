@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class SettingsScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject canvas;
+    public Button button;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,11 +28,11 @@ public class SettingsScript : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        button.GetComponentInChildren(Text).fontSize(36);
+        button.GetComponentInChildren<Text>().fontSize = 36;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        button.GetComponentInChildren(Text).fontSize(28);
+        button.GetComponentInChildren<Text>().fontSize = 28;
     }
 }
