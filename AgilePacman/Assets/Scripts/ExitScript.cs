@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExitScript : MonoBehaviour
+public class ExitScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     // Start is called before the first frame update
     void Start()
@@ -20,5 +20,15 @@ public class ExitScript : MonoBehaviour
     {
         Debug.Log("exit game..");
         Application.Quit();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        button.GetComponentInChildren(Text).fontSize(36);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        button.GetComponentInChildren(Text).fontSize(28);
     }
 }

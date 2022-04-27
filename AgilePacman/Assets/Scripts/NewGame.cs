@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class NewGame : MonoBehaviour
+public class NewGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public Button button;
     bool gameIsStarted;
@@ -28,5 +29,15 @@ public class NewGame : MonoBehaviour
         canvas.SetActive(false);
         Debug.Log("init new game..");
         Time.timeScale = 1;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        button.GetComponentInChildren(Text).fontSize(36);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        button.GetComponentInChildren(Text).fontSize(28);
     }
 }
