@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class NewGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public Button button;
+    public GameObject button;
     bool gameIsStarted;
     public GameObject canvas;
 
