@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
             this.ghosts[i].gameObject.SetActive(true);
         }
 
-        this.mainCharacter.gameObject.SetActive(true);
+        this.mainCharacter.ResetState();
     }
 
     private void GameOver()
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
         this.ghostMultiplier++;
     }
 
-    public void MainCharacterEaten(MainCharacter mainCharacter)
+    public void MainCharacterEaten()
     {
         this.mainCharacter.gameObject.SetActive(false);
 
