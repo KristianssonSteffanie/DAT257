@@ -38,24 +38,24 @@ public class MainCharacter : MonoBehaviour
 
     public void ResetState()
     {
-        enabled = true;
-        spriteRenderer.enabled = true;
-        collider.enabled = true;
-        deathSequence.enabled = false;
-        deathSequence.spriteRenderer.enabled = false;
-        movement.ResetState();
-        gameObject.SetActive(true);
+        this.enabled = true;
+        this.spriteRenderer.enabled = true;
+        this.collider.enabled = true;
+        this.deathSequence.enabled = false;
+        this.deathSequence.spriteRenderer.enabled = false;
+        this.movement.ResetState();
+        this.gameObject.SetActive(true);
     }
 
     public void DeathSequence()
     {
-        enabled = false;
-        spriteRenderer.enabled = false;
-        collider.enabled = false;
-        movement.enabled = false;
-        deathSequence.enabled = true;
-        deathSequence.spriteRenderer.enabled = true;
-        deathSequence.Restart();
+        this.enabled = false;
+        this.spriteRenderer.enabled = false;
+        this.collider.enabled = false;
+        this.movement.enabled = false;
+        this.deathSequence.enabled = true;
+        this.deathSequence.spriteRenderer.enabled = true;
+        this.deathSequence.Restart();
     }
 
 }

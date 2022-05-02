@@ -11,36 +11,36 @@ public class AnimatedSprite : MonoBehaviour
 
     private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        this.spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
     {
-        InvokeRepeating(nameof(Advance), animationTime, animationTime);
+        InvokeRepeating(nameof(Advance), this.animationTime, this.animationTime);
     }
 
     private void Advance()
     {
-        if (!spriteRenderer.enabled) {
+        if (!this.spriteRenderer.enabled) {
             return;
         }
 
-        animationFrame++;
+        this.animationFrame++;
 
         // If looping through sprites, restart at frame 0
-        if (animationFrame >= sprites.Length && loop) {
-            animationFrame = 0;
+        if (this.animationFrame >= this.sprites.Length && this.loop) {
+            this.animationFrame = 0;
         }
 
         // check errors, make sure the index is in the array of sprites
-        if (animationFrame >= 0 && animationFrame < sprites.Length) {
-            spriteRenderer.sprite = sprites[animationFrame];
+        if (this.animationFrame >= 0 && this.animationFrame < this.sprites.Length) {
+            this.spriteRenderer.sprite = this.sprites[this.animationFrame];
         }
     }
 
     public void Restart()
     {
-        animationFrame = -1;
+        this.animationFrame = -1;
 
         Advance();
     }

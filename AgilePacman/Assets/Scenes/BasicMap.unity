@@ -968,7 +968,7 @@ GameObject:
   - component: {fileID: 363345246}
   - component: {fileID: 363345245}
   m_Layer: 8
-  m_Name: Prupps
+  m_Name: Pellets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3666,7 +3666,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c629f1eb9a27e40a7fa37d5ae4bd5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSequence: {fileID: 0}
 --- !u!114 &462134002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3682,9 +3681,9 @@ MonoBehaviour:
   speed: 8
   speedMultiplier: 1
   initialDirection: {x: 1, y: 0}
-  obstacleLayer:
+  obsticleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
 --- !u!114 &462134003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3719,7 +3718,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.46
+  m_Radius: 0.5
 --- !u!1 &785803009
 GameObject:
   m_ObjectHideFlags: 0
