@@ -64,6 +64,21 @@ PrefabInstance:
       propertyPath: initialDirection.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6243866102356580641, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+      propertyPath: initialBehavior
+      value: 
+      objectReference: {fileID: 4460967492688432568}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+--- !u!114 &4460967492688432568 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -6818138130452187517, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+  m_PrefabInstance: {fileID: 2056334349688355643}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 550c311dc3a76004da9be05de2ae261c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
