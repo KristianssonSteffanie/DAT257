@@ -1,0 +1,15 @@
+what do I want to learn or understand better?
+I still want to learn more c# but also get better at the scrum working-process,
+you can always do better ;)
+  
+how can I help someone else, or the entire team, to learn something new?
+We discuss what's difficult and then try together, learn-by-doing is the best!
+But also by just having a good comunication helps everyone.
+    
+what is my contribution towards the team’s use of Scrum?
+That i always do the best i can and take my tasks and do them in time, sometimes it's 
+difficult to do something in tiome and other times i can take on more tasks.
+    
+what is my contribution towards the team’s deliveries?
+That I check my code and etc so it has no bugs when we merge the code, and see
+that everything actually works as it should.
