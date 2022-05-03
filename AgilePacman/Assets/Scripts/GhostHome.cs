@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class GhostHome : GhostBehavior
@@ -16,7 +17,7 @@ public class GhostHome : GhostBehavior
 
     private IEnumerator ExitTransition()
     {
-        this.ghost.SetDirection(Vector2.up, true);
+        this.ghost.movement.SetDirection(Vector2.up, true);
         this.ghost.movement.rigidbody.isKinematic = true;
         this.ghost.movement.enabled = false;
         
@@ -48,7 +49,7 @@ public class GhostHome : GhostBehavior
             yield return null;
         }
 
-        this.ghost.SetDirection(new Vector2(Random.value < 0.5f ? -1.0f : 1.0f, 0.0f), true);
+        this.ghost.movement.SetDirection(new Vector2(Random.value < 0.5f ? -1.0f : 1.0f, 0.0f), true);
         this.ghost.movement.rigidbody.isKinematic = false;
         this.ghost.movement.enabled = true; 
     }
