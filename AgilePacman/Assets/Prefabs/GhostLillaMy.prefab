@@ -8,6 +8,34 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7682163593697841368, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+      propertyPath: blue
+      value: 
+      objectReference: {fileID: 7882275242440437451}
+    - target: {fileID: -7682163593697841368, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 2139045514609649135}
+    - target: {fileID: -7682163593697841368, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+      propertyPath: white
+      value: 
+      objectReference: {fileID: 7455479507222412753}
+    - target: {fileID: 1419657855586890317, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+      propertyPath: animationTime
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419657855586890317, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+      propertyPath: sprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419657855586890317, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a6713f3fc148de40bb47ad864dbef16, type: 3}
+    - target: {fileID: 1419657855586890317, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: e3c71352813722c45973286f4d41be99, type: 3}
     - target: {fileID: 1624584718105832718, guid: c5b03df456b404647856ae063c4cca97, type: 3}
       propertyPath: m_Name
       value: GhostLillaMy
@@ -75,3 +103,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+--- !u!212 &2139045514609649135 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2242785366521576346, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+  m_PrefabInstance: {fileID: 193817406710554229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7455479507222412753 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7334038308251968420, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+  m_PrefabInstance: {fileID: 193817406710554229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7882275242440437451 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8058035352306299070, guid: c5b03df456b404647856ae063c4cca97, type: 3}
+  m_PrefabInstance: {fileID: 193817406710554229}
+  m_PrefabAsset: {fileID: 0}
