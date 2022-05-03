@@ -13,10 +13,6 @@ public class GhostScatter : GhostBehavior
 
         // check that node is not null, enabled and the ghost not frightened
         if (node != null && this.enabled && !this.ghost.frightened.enabled) {
-
-            // cleaner code
-            // nrOfDir = node.availableDirections.Count;
-            
             // pick a random direction
             int index = Random.Range(0, node.availableDirections.Count);
             
