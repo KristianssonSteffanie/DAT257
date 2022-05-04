@@ -44,4 +44,14 @@ public class MainCharacter : MonoBehaviour
         this.gameObject.SetActive(true);
     }
 
+     public void Disable()
+    {
+        this.enabled = false;
+        this.spriteRenderer.enabled = false;
+        this.collider.enabled = false;
+        this.movement.enabled = false;
+        this.gameObject.SetActive(false);
+    }
+
+
 }
