@@ -90,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1719196308626213804, guid: c5b03df456b404647856ae063c4cca97, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2242785366521576346, guid: c5b03df456b404647856ae063c4cca97, type: 3}
       propertyPath: m_Sprite
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 8994870812149094104}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbadf2e4f6af4ad4090bbef638e69a99, type: 3}
   m_Name: 
