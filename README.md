@@ -1,5 +1,5 @@
 # DAT257
-Agile software project management
+Agile software project management in Unity using v.2022.1.0b16
 
 Alla mötesdokument ligger i mappen "Meetings".
 
