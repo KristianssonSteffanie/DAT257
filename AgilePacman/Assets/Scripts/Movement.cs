@@ -64,9 +64,7 @@ public class Movement : MonoBehaviour
         {
             this.direction = direction;
             this.nextDirection = Vector2.zero;
-        }
-        else
-        {
+        } else {
             this.nextDirection = direction;
         }
     }
