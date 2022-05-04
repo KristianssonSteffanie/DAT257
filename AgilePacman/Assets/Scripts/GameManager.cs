@@ -3,7 +3,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Ghost[] ghosts;
-    public MainCharacter mainCharacter;
+    public MainCharacter[] characters;
+    public int selectedCharacter = 0;
+
+    // public MainCharacter mainCharacter;
     public Transform pellets;
     public int ghostMultiplier { get; private set; } = 1;
     public int score { get; private set; }
@@ -47,8 +50,14 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < this.ghosts.Length; i++) {
             this.ghosts[i].ResetState();
         }
+        for (int i = 0; i < this.characters.Length; i++) {
+            if(i != selectedCharacter){
+                this.characters[i].Disable();
+            }
+        }
 
-        this.mainCharacter.ResetState();
+        this.characters[selectedCharacter].ResetState();
+
     }
 
     private void GameOver()
@@ -57,7 +66,8 @@ public class GameManager : MonoBehaviour
             this.ghosts[i].gameObject.SetActive(false);
         }
 
-        this.mainCharacter.gameObject.SetActive(false);
+        this.characters[selectedCharacter].gameObject.SetActive(false);
+
     }
 
     private void SetScore(int score)
@@ -79,7 +89,8 @@ public class GameManager : MonoBehaviour
 
     public void MainCharacterEaten()
     {
-        this.mainCharacter.gameObject.SetActive(false);
+        this.characters[selectedCharacter].gameObject.SetActive(false);
+
 
         SetLives(this.lives - 1);
 
@@ -98,7 +109,7 @@ public class GameManager : MonoBehaviour
 
         if (!HasRemaningPellets())
         {
-            this.mainCharacter.gameObject.SetActive(false);
+            this.characters[selectedCharacter].gameObject.SetActive(false);
             Invoke(nameof(NewRound), 3.0f);
         }
     }
