@@ -3690,7 +3690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c629f1eb9a27e40a7fa37d5ae4bd5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSequence: {fileID: 0}
 --- !u!114 &462134002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9769,7 +9768,9 @@ MonoBehaviour:
   - {fileID: 366004799}
   - {fileID: 1677841429}
   - {fileID: 780541624}
-  mainCharacter: {fileID: 462134001}
+  characters:
+  - {fileID: 462134001}
+  selectedCharacter: 0
   pellets: {fileID: 363345244}
 --- !u!1 &1237169330
 GameObject:
