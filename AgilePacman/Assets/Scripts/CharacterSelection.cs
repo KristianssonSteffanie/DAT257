@@ -6,33 +6,50 @@ public class CharacterSelection : MonoBehaviour
 {
     public GameObject nextButton;
     public GameObject prevButton;
+    public StartGame startButton;
     public MainCharacter[] characters;
+
+    public Image[] characterImages; 
     public int selectedCharacter = 0;
 
+// Paging through characters using keys
+    public void Update(){
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
+            this.NextCharacter();
+        }
+        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)){
+            this.PreviousCharacter();
+        }
+        else if (Input.GetKeyDown(KeyCode.Return)){
+            startButton.click();
+        }
+    }
     public void NextCharacter()
     {
         Debug.Log("next character..");
         characters[selectedCharacter].Disable();
+        characterImages[selectedCharacter].enabled = false;
         selectedCharacter = (selectedCharacter + 1) % characters.Length;
         characters[selectedCharacter].ResetState();
-        Debug.Log(characters[selectedCharacter]);
+        characterImages[selectedCharacter].enabled = true;
     }
 
     public void PreviousCharacter()
     {
         Debug.Log("previous character..");
         characters[selectedCharacter].Disable();
+        characterImages[selectedCharacter].enabled = false;
         selectedCharacter--;
         if (selectedCharacter < 0){
             selectedCharacter += characters.Length;
         }
         characters[selectedCharacter].ResetState();
-        Debug.Log(characters[selectedCharacter]);
+        characterImages[selectedCharacter].enabled = true;
     }
 
     public void OnNextPointerEnter()
     {
-        nextButton.GetComponentInChildren<Text>().fontSize = 100;
+        nextButton.GetComponentInChildren<Text>().fontSize = 110;
     }
 
     public void OnNextPointerExit()
@@ -42,7 +59,7 @@ public class CharacterSelection : MonoBehaviour
 
     public void OnPrevPointerEnter()
     {
-        prevButton.GetComponentInChildren<Text>().fontSize = 100;
+        prevButton.GetComponentInChildren<Text>().fontSize = 110;
     }
 
     public void OnPrevPointerExit()
