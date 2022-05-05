@@ -50,7 +50,9 @@ public class Ghost : MonoBehaviour
             if (this.frightened.enabled) {
                 FindObjectOfType<GameManager>().GhostEaten(this);
             } else {
+                FindObjectOfType<LifeCount>().LoseLife();
                 FindObjectOfType<GameManager>().MainCharacterEaten();
+                
             }
         }
     }
