@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     public float speed = 8.0f; 
     public float speedMultiplier = 1.0f; 
     public Vector2 initialDirection;
-    public LayerMask obsticleLayer;
+    public LayerMask obstacleLayer;
 
     public new Rigidbody2D rigidbody { get; private set; } //Creating getter and setter methods
     public Vector2 direction { get; private set; }
@@ -72,7 +72,7 @@ public class Movement : MonoBehaviour
     public bool Occupied(Vector2 direction)
     {
         // If no collider is hit then there is no obstacle in that direction
-        RaycastHit2D hit = Physics2D.BoxCast(this.transform.position, Vector2.one * 0.75f, 0.0f, direction, 0.75f, this.obsticleLayer);
+        RaycastHit2D hit = Physics2D.BoxCast(this.transform.position, Vector2.one * 0.75f, 0.0f, direction, 0.75f, this.obstacleLayer);
         return hit.collider != null;
     }
 

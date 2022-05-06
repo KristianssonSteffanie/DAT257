@@ -1142,6 +1142,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4266216578263082129, guid: a91e2f80e88064a43b3a243346d9b865, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266216578263082129, guid: a91e2f80e88064a43b3a243346d9b865, type: 3}
       propertyPath: obsticleLayer.m_Bits
       value: 512
       objectReference: {fileID: 0}
@@ -10930,7 +10934,7 @@ MonoBehaviour:
   speed: 8
   speedMultiplier: 1
   initialDirection: {x: 1, y: 0}
-  obsticleLayer:
+  obstacleLayer:
     serializedVersion: 2
     m_Bits: 512
 --- !u!114 &594891013
@@ -11427,7 +11431,7 @@ MonoBehaviour:
   speed: 8
   speedMultiplier: 1
   initialDirection: {x: 1, y: 0}
-  obsticleLayer:
+  obstacleLayer:
     serializedVersion: 2
     m_Bits: 512
 --- !u!114 &894261423
@@ -17114,6 +17118,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3671143871532106708, guid: 8e3d46d115a942c40a8f54fe8627af6e, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3671143871532106708, guid: 8e3d46d115a942c40a8f54fe8627af6e, type: 3}
       propertyPath: obsticleLayer.m_Bits
       value: 512
       objectReference: {fileID: 0}
@@ -17542,7 +17550,7 @@ MonoBehaviour:
   speed: 8
   speedMultiplier: 1
   initialDirection: {x: 1, y: 0}
-  obsticleLayer:
+  obstacleLayer:
     serializedVersion: 2
     m_Bits: 512
 --- !u!114 &1675005568
@@ -17735,7 +17743,7 @@ MonoBehaviour:
   speed: 8
   speedMultiplier: 1
   initialDirection: {x: 1, y: 0}
-  obsticleLayer:
+  obstacleLayer:
     serializedVersion: 2
     m_Bits: 512
 --- !u!114 &1699178799
@@ -18453,6 +18461,10 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2669974366734664159, guid: 92c7e7dd531d7af4d9b2c2c0451c823c, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669974366734664159, guid: 92c7e7dd531d7af4d9b2c2c0451c823c, type: 3}
       propertyPath: obsticleLayer.m_Bits
       value: 512
       objectReference: {fileID: 0}
@@ -18482,6 +18494,10 @@ PrefabInstance:
     - target: {fileID: 6586803854496909682, guid: 33a28cf5c44999e4e87b4df0a2b9fbf4, type: 3}
       propertyPath: initialDirection.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586803854496909682, guid: 33a28cf5c44999e4e87b4df0a2b9fbf4, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 6586803854496909682, guid: 33a28cf5c44999e4e87b4df0a2b9fbf4, type: 3}
       propertyPath: obsticleLayer.m_Bits
@@ -20411,7 +20427,7 @@ MonoBehaviour:
   speed: 8
   speedMultiplier: 1
   initialDirection: {x: 1, y: 0}
-  obsticleLayer:
+  obstacleLayer:
     serializedVersion: 2
     m_Bits: 512
 --- !u!114 &2095844569
