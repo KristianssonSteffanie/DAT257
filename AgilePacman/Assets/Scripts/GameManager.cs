@@ -75,6 +75,11 @@ public class GameManager : MonoBehaviour
         this.score = score;
     }
 
+    public int GetScore()
+    {
+        return this.score;
+    }
+
     private void SetLives(int lives)
     {
         this.lives = lives;
