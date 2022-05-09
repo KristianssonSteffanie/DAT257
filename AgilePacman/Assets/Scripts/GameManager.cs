@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public int selectedCharacter = 0;
 
     // public MainCharacter mainCharacter;
+    public CharacterSelection selected;
     public Transform pellets;
     public int ghostMultiplier { get; private set; } = 1;
     public int score { get; private set; }
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     private void Update() 
     {
+        this.selectedCharacter = selected.selectedCharacter;
         if (this.lives <= 0 && Input.anyKeyDown) {
             NewGame();
         }

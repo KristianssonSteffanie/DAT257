@@ -9,7 +9,10 @@ public class Ghost : MonoBehaviour
     public GhostChase chase { get; private set; }
     public GhostFrightened frightened { get; private set; }
     public GhostBehavior initialBehavior;
-    public Transform target;
+    // public Transform target;
+    public Transform[] targets;
+    public CharacterSelection selected;
+    public int selectedTarget = 0;
     public int points = 200;
 
     private void Awake()
@@ -24,6 +27,9 @@ public class Ghost : MonoBehaviour
     private void Start()
     {
         ResetState();
+    }
+    private void Update(){
+        this.selectedTarget = selected.selectedCharacter;
     }
 
     public void ResetState()

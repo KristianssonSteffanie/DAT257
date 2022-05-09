@@ -94,7 +94,7 @@ public class GhostFrightened : GhostBehavior
 
                 // new position, IF moving in that dir
                 Vector3 newPosition = this.transform.position + new Vector3(availableDirection.x, availableDirection.y, 0.0f);
-                float distance = (this.ghost.target.position - newPosition).sqrMagnitude; // count the distance
+                float distance = (this.ghost.targets[this.ghost.selectedTarget].position - newPosition).sqrMagnitude; // count the distance
 
                 // if distance is less then minDist, change direction and minDist=distance
                 if (distance > maxDistance) {
