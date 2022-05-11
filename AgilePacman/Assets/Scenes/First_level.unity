@@ -5211,13 +5211,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4266216578263082129, guid: a91e2f80e88064a43b3a243346d9b865, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266216578263082129, guid: a91e2f80e88064a43b3a243346d9b865, type: 3}
       propertyPath: obsticleLayer.m_Bits
       value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 5345555130429907482, guid: a91e2f80e88064a43b3a243346d9b865, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1705398934}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: a91e2f80e88064a43b3a243346d9b865, type: 3}
@@ -5331,9 +5335,9 @@ MonoBehaviour:
   speed: 8
   speedMultiplier: 1
   initialDirection: {x: 1, y: 0}
-  obsticleLayer:
+  obstacleLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
 --- !u!114 &1705398930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6167,10 +6171,14 @@ PrefabInstance:
     - target: {fileID: 3058674752173117433, guid: 33a28cf5c44999e4e87b4df0a2b9fbf4, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1705398934}
     - target: {fileID: 6586803854496909682, guid: 33a28cf5c44999e4e87b4df0a2b9fbf4, type: 3}
       propertyPath: initialDirection.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586803854496909682, guid: 33a28cf5c44999e4e87b4df0a2b9fbf4, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 6586803854496909682, guid: 33a28cf5c44999e4e87b4df0a2b9fbf4, type: 3}
       propertyPath: obsticleLayer.m_Bits

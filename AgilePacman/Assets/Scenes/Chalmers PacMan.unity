@@ -11446,11 +11446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a738222840e4306825a5fdaa4db2f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 135cb3b03b4993a4d8325ed9b6fa2dfe, type: 3}
-  - {fileID: 21300000, guid: 14838c5ad69734341967b66e7d5441fa, type: 3}
-  - {fileID: 21300000, guid: 135cb3b03b4993a4d8325ed9b6fa2dfe, type: 3}
-  - {fileID: 21300000, guid: 61f9e8825273d1b45b89c7c5bded6e58, type: 3}
+  sprites: []
   animationTime: 0.125
   loop: 1
 --- !u!58 &894261424
@@ -17692,7 +17688,7 @@ MonoBehaviour:
   - {fileID: 1545841626}
   - {fileID: 28628658}
   - {fileID: 2040999530}
-  livesRemaining: 0
+  livesRemaining: 3
 --- !u!1 &1699178796
 GameObject:
   m_ObjectHideFlags: 0
