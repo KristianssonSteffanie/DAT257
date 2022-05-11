@@ -6,17 +6,13 @@ using UnityEngine.UI;
 public class LifeCount : MonoBehaviour
 {
    public Image[] hearts;
-   //public int livesRemaining;
-   public int heart = GameManager.lives;
+   public int livesRemaining;
 
    public void LoseLife(){
-       //livesRemaining--;
-       //lives[livesRemaining].enabled=false;
+       livesRemaining--;
+       hearts[livesRemaining].enabled=false;
 
-       heart--;
-       hearts[heart].enabled = false;
-
-       if(heart == 0){
+       if(livesRemaining <= 0){
            Debug.Log("You lost");
        }
    }

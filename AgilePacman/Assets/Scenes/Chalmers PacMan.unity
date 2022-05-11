@@ -11072,7 +11072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives:
+  hearts:
   - {fileID: 1545841626}
   - {fileID: 28628658}
   - {fileID: 2040999530}
@@ -11565,10 +11565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives:
-  - {fileID: 1545841626}
-  - {fileID: 28628658}
-  - {fileID: 2040999530}
+  hearts: []
   livesRemaining: 3
 --- !u!1 &911370414
 GameObject:
@@ -17684,7 +17681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives:
+  hearts:
   - {fileID: 1545841626}
   - {fileID: 28628658}
   - {fileID: 2040999530}
@@ -17877,7 +17874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives:
+  hearts:
   - {fileID: 1545841626}
   - {fileID: 28628658}
   - {fileID: 2040999530}
@@ -20561,7 +20558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives:
+  hearts:
   - {fileID: 1545841626}
   - {fileID: 28628658}
   - {fileID: 2040999530}
