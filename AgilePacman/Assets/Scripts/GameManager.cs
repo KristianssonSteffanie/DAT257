@@ -154,13 +154,13 @@ public class GameManager : MonoBehaviour
 
     private void NextLevel()
     {
-        // check if current level done
-        if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("First_level")) {
+        // check if current level done then go to loadingscreen
+        if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("FirstLevel")) {
          SceneManager.LoadScene ("BewteenLevels");
         }
-        /*if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("BewteenLevels")) {
-         SceneManager.LoadScene ("Second_level");
-        }*/
+        if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("SecondLevel")) {
+         SceneManager.LoadScene ("BewteenLevels");
+        }
     }
 
 }
