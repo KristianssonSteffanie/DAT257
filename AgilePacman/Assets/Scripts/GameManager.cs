@@ -155,8 +155,11 @@ public class GameManager : MonoBehaviour
     private void NextLevel()
     {
         // always check if next level
-        if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("BasicMap")) {
-         SceneManager.LoadScene ("First_level");
+        if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("First_level")) {
+         SceneManager.LoadScene ("Second_level");
+        }
+         else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("Second_level")) {
+         SceneManager.LoadScene ("Chalmers_level");
         }
     }
 
