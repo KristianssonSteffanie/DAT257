@@ -5,8 +5,7 @@ public class GameManager : MonoBehaviour
     public Ghost[] ghosts;
     public MainCharacter[] characters;
     public int selectedCharacter = 0;
-
-    // public MainCharacter mainCharacter;
+    public CharacterSelection selected;
     public Transform pellets;
     public int ghostMultiplier { get; private set; } = 1;
     public int score { get; private set; }
@@ -19,6 +18,10 @@ public class GameManager : MonoBehaviour
 
     private void Update() 
     {
+        // Making sure that the selectedCharacter integer is updated after character selection.
+        // This prevents the character from changing back to the smurf after each time you die.
+        this.selectedCharacter = selected.selectedCharacter;
+
         if (this.lives <= 0 && Input.anyKeyDown) {
             NewGame();
         }
