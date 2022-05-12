@@ -162,6 +162,7 @@ MonoBehaviour:
   - {fileID: 578154581}
   selectedCharacter: 0
   pellets: {fileID: 474741149}
+  score: 0
 --- !u!4 &108627304
 Transform:
   m_ObjectHideFlags: 0
@@ -212,10 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  lives: []
   livesRemaining: 3
 --- !u!114 &168998625
 MonoBehaviour:
@@ -418,6 +416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreDisp: {fileID: 193222355}
+  highScoreDisp: {fileID: 0}
 --- !u!114 &193222355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,10 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 1573091690}
-  - {fileID: 1926267140}
-  - {fileID: 1764227983}
+  lives: []
   livesRemaining: 3
 --- !u!114 &303404630
 MonoBehaviour:
@@ -3081,10 +3077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 1573091690}
-  - {fileID: 1926267140}
-  - {fileID: 1764227983}
+  lives: []
   livesRemaining: 3
 --- !u!114 &578154581
 MonoBehaviour:
@@ -3274,10 +3267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 1573091690}
-  - {fileID: 1926267140}
-  - {fileID: 1764227983}
+  lives: []
   livesRemaining: 3
 --- !u!114 &583781608
 MonoBehaviour:
@@ -8140,10 +8130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 1573091690}
-  - {fileID: 1926267140}
-  - {fileID: 1764227983}
+  lives: []
   livesRemaining: 3
 --- !u!114 &1415298448
 MonoBehaviour:

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 public class ScoreDisplay : MonoBehaviour
 {
-    private GameManager gameManager;
     private int score;
 
     private int highScore;
@@ -18,8 +19,7 @@ public class ScoreDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
-        score = 0;
+         score = 0;
 
         highScore = PlayerPrefs.GetInt(key, 0);
 
@@ -28,7 +28,7 @@ public class ScoreDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score = gameManager.GetScore();
+        score = ScoreKeeper.getScore();
 
         scoreDisp.text = score.ToString();
 
