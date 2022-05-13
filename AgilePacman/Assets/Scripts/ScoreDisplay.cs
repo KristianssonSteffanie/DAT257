@@ -30,9 +30,9 @@ public class ScoreDisplay : MonoBehaviour
     {
         score = ScoreKeeper.getScore();
 
-        scoreDisp.text = score.ToString();
+        scoreDisp.text = "SCORE: " + score.ToString();
 
-        highScoreDisp.text = highScore.ToString();
+        highScoreDisp.text = "HIGH SCORE: " + highScore.ToString();
     }
 
     void OnDisable()
