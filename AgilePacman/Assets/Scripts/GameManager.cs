@@ -10,9 +10,13 @@ public class GameManager : MonoBehaviour
     public int ghostMultiplier { get; private set; } = 1;
     public int score { get; private set; }
     public int lives { get; private set; }
+    public GameObject gameOver;
+    public GameObject restartButton;
+    public NewGame newgame;
 
     private void Start() 
     {
+        
         NewGame();
     }
 
@@ -23,7 +27,13 @@ public class GameManager : MonoBehaviour
         this.selectedCharacter = selected.selectedCharacter;
 
         if (this.lives <= 0 && Input.anyKeyDown) {
-            NewGame();
+            //NewGame();
+            gameOver.SetActive(true);
+        if(restartButton.clicked==true)
+        NewGame();
+        gameOver.SetActive(false);
+
+
         }
     }
 
