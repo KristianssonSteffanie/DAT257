@@ -156,10 +156,10 @@ public class GameManager : MonoBehaviour
     {
         // check if current level done then go to loadingscreen
         if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("FirstLevel")) {
-         SceneManager.LoadScene ("BewteenLevels");
+         SceneManager.LoadScene ("BetweenLevels");
         }
-        if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("SecondLevel")) {
-         SceneManager.LoadScene ("BewteenLevels");
+        else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("SecondLevel")) {
+         SceneManager.LoadScene ("BetweenLevels");
         }
     }
 
