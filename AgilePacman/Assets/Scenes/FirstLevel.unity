@@ -299,6 +299,9 @@ MonoBehaviour:
   selected: {fileID: 1800515560}
   pellets: {fileID: 474741149}
   score: 0
+  gameOver: {fileID: 184416911}
+  restartButton: {fileID: 2029435071}
+  newgame: {fileID: 0}
 --- !u!4 &108627304
 Transform:
   m_ObjectHideFlags: 0
@@ -638,7 +641,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -120, y: -114}
+  m_AnchoredPosition: {x: -403, y: -44}
   m_SizeDelta: {x: 250, y: 54.774994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &193222354
@@ -10859,7 +10862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -239, y: -109}
+  m_AnchoredPosition: {x: -284, y: -102.16}
   m_SizeDelta: {x: 50, y: 23.671}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1960351448
@@ -11733,8 +11736,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 2029435071}
-  canvas: {fileID: 0}
-  selectionCanvas: {fileID: 0}
+  canvas: {fileID: 1189832638}
+  selectionCanvas: {fileID: 412532114}
 --- !u!114 &2029435074
 MonoBehaviour:
   m_ObjectHideFlags: 0

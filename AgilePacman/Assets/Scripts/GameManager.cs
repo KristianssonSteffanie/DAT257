@@ -31,9 +31,9 @@ public class GameManager : MonoBehaviour
         if (this.lives <= 0 && Input.anyKeyDown) {
             //NewGame();
             gameOver.SetActive(true);
-        if(restartButton.clicked==true)
-        NewGame();
-        gameOver.SetActive(false);
+        //if(restartButton.clicked==true)
+        //NewGame();
+        //gameOver.SetActive(false);
 
 
         }
