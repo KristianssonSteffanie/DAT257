@@ -18,9 +18,10 @@ public class LifeCount : MonoBehaviour
    }
 
    //For testing
-   //public void Update(){
-  //     if (Input.GetKeyDown(KeyCode.LeftArrow))
-  //      LoseLife();
- //  }
+  // public void Update(){
+    //   if (Input.GetKeyDown(KeyCode.LeftArrow))
+  //
+      //LoseLife();
+  //}
         
 }
