@@ -26,7 +26,6 @@ public class CharacterSelection : MonoBehaviour
     }
     public void NextCharacter()
     {
-        Debug.Log("next character..");
         characters[selectedCharacter].Disable();
         characterImages[selectedCharacter].enabled = false;
         selectedCharacter = (selectedCharacter + 1) % characters.Length;
@@ -36,7 +35,6 @@ public class CharacterSelection : MonoBehaviour
 
     public void PreviousCharacter()
     {
-        Debug.Log("previous character..");
         characters[selectedCharacter].Disable();
         characterImages[selectedCharacter].enabled = false;
         selectedCharacter--;
