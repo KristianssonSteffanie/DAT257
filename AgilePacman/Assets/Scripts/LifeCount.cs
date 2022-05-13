@@ -12,7 +12,7 @@ public class LifeCount : MonoBehaviour
        livesRemaining--;
        lives[livesRemaining].enabled=false;
 
-       if(livesRemaining==0){
+       if(livesRemaining == 0){
            Debug.Log("You lost");
        }
    }
@@ -23,4 +23,4 @@ public class LifeCount : MonoBehaviour
   //      LoseLife();
  //  }
         
-    }
+}

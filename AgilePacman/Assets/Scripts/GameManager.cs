@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,6 +27,7 @@ public class GameManager : MonoBehaviour
         if (this.lives <= 0 && Input.anyKeyDown) {
             NewGame();
         }
+        
     }
 
     private void NewGame()
@@ -118,7 +121,8 @@ public class GameManager : MonoBehaviour
         if (!HasRemaningPellets())
         {
             this.characters[selectedCharacter].gameObject.SetActive(false);
-            Invoke(nameof(NewRound), 3.0f);
+            //Invoke(nameof(NewRound), 3.0f);
+            NextLevel();
         }
     }
 
@@ -148,6 +152,18 @@ public class GameManager : MonoBehaviour
     private void ResetGhostMultiplier()
     {
         this.ghostMultiplier = 1;
+    }
+
+
+    private void NextLevel()
+    {
+        // check if current level done then go to loadingscreen
+        if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("FirstLevel")) {
+         SceneManager.LoadScene ("BetweenLevels");
+        }
+        else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("SecondLevel")) {
+         SceneManager.LoadScene ("BetweenLevels");
+        }
     }
 
 }
