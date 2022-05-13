@@ -27,12 +27,11 @@ public class GhostChase : GhostBehavior
 
                 // if distance is less then minDist, change direction and minDist=distance
                 if (distance < minDistance) {
-                    direction = availableDirection;
+		   direction = availableDirection;
                     minDistance = distance;
                 }
             }
             this.ghost.movement.SetDirection(direction);
         }
     }
-
 }

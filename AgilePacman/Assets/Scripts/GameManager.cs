@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class GameManager : MonoBehaviour
     public CharacterSelection selected;
     public Transform pellets;
     public int ghostMultiplier { get; private set; } = 1;
-    public int score { get; private set; }
+    public int score;
     public int lives { get; private set; }
     public GameObject gameOver;
     public GameObject restartButton;
@@ -35,11 +37,12 @@ public class GameManager : MonoBehaviour
 
 
         }
+        
     }
 
     private void NewGame()
     {
-        SetScore(0);
+        ScoreKeeper.setScore(0);
         SetLives(3);
         NewRound();
     }
@@ -83,16 +86,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void SetScore(int score)
-    {
-        this.score = score;
-    }
-
-    public int GetScore()
-    {
-        return this.score;
-    }
-
     private void SetLives(int lives)
     {
         this.lives = lives;
@@ -101,7 +94,7 @@ public class GameManager : MonoBehaviour
     public void GhostEaten(Ghost ghost)
     {
         int points = ghost.points * this.ghostMultiplier;
-        SetScore(this.score + points);
+        ScoreKeeper.setScore(ScoreKeeper.getScore() + points);
         this.ghostMultiplier++;
     }
 
@@ -123,12 +116,13 @@ public class GameManager : MonoBehaviour
     {
         pellet.gameObject.SetActive(false);
 
-        SetScore(this.score + pellet.points);
+        ScoreKeeper.setScore(ScoreKeeper.getScore() + pellet.points);
 
         if (!HasRemaningPellets())
         {
             this.characters[selectedCharacter].gameObject.SetActive(false);
-            Invoke(nameof(NewRound), 3.0f);
+            //Invoke(nameof(NewRound), 3.0f);
+            NextLevel();
         }
     }
 
@@ -158,6 +152,18 @@ public class GameManager : MonoBehaviour
     private void ResetGhostMultiplier()
     {
         this.ghostMultiplier = 1;
+    }
+
+
+    private void NextLevel()
+    {
+        // check if current level done then go to loadingscreen
+        if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("FirstLevel")) {
+         SceneManager.LoadScene ("BetweenLevels");
+        }
+        if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("SecondLevel")) {
+         SceneManager.LoadScene ("BetweenLevels");
+        }
     }
 
 }
