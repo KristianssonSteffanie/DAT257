@@ -162,6 +162,7 @@ MonoBehaviour:
   - {fileID: 578154581}
   selectedCharacter: 0
   pellets: {fileID: 474741149}
+  score: 0
 --- !u!4 &108627304
 Transform:
   m_ObjectHideFlags: 0
@@ -400,7 +401,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -120, y: -114}
-  m_SizeDelta: {x: 200, y: 54.774994}
+  m_SizeDelta: {x: 250, y: 54.774994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &193222354
 MonoBehaviour:
@@ -415,6 +416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreDisp: {fileID: 193222355}
+  highScoreDisp: {fileID: 0}
 --- !u!114 &193222355
 MonoBehaviour:
   m_ObjectHideFlags: 0
