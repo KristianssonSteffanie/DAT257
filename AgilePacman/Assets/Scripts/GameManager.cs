@@ -1,6 +1,8 @@
-using UnityEngine;
+ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,8 +15,11 @@ public class GameManager : MonoBehaviour
     public int score;
     public int lives { get; private set; }
     public GameObject gameOver;
-    public GameObject restartButton;
-    public NewGame newgame;
+    //public GameObject restartButton;
+    bool gameIsStarted;
+    public Image[] livesImages;
+    public int[] testing;
+    //public GameObject canvas;
 
     private void Start() 
     {
@@ -31,6 +36,14 @@ public class GameManager : MonoBehaviour
         if (this.lives <= 0 && Input.anyKeyDown) {
             //NewGame();
             gameOver.SetActive(true);
+            gameIsStarted = false;
+    
+          Time.timeScale = 0;
+          //if(Input.restartButton)
+          ResetState();
+            NewGame();
+//canvas.SetActive(false);
+
         //if(restartButton.clicked==true)
         //NewGame();
         //gameOver.SetActive(false);
@@ -40,8 +53,17 @@ public class GameManager : MonoBehaviour
         
     }
 
+     public void LoseLifeImage(){ //Method to remove one life visually
+       //lives--;
+       livesImages[lives].enabled=false;
+       if(lives == 0){
+           Debug.Log("You lost");
+       }
+   }
+
     private void NewGame()
     {
+      //  gameOver.SetActive(false);
         ScoreKeeper.setScore(0);
         SetLives(3);
         NewRound();
@@ -104,6 +126,7 @@ public class GameManager : MonoBehaviour
 
 
         SetLives(this.lives - 1);
+        LoseLifeImage();
 
         if (this.lives > 0) {
             Invoke(nameof(ResetState),3.0f);

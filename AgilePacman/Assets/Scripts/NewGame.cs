@@ -13,7 +13,7 @@ public class NewGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     // Start is called before the first frame update
     void Start()
     {
-        gameIsStarted = false;
+        //gameIsStarted = false;
         canvas.SetActive(true);
         selectionCanvas.SetActive(false);
 

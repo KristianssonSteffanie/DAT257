@@ -57,7 +57,7 @@ public class Ghost : MonoBehaviour
                 FindObjectOfType<GameManager>().GhostEaten(this);
             } else {
                 FindObjectOfType<GameManager>().MainCharacterEaten();
-                FindObjectOfType<LifeCount>().LoseLife();
+                //FindObjectOfType<LifeCount>().LoseLife();
             }
         }
     }
