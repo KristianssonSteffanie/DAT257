@@ -3651,6 +3651,9 @@ MonoBehaviour:
   selected: {fileID: 0}
   pellets: {fileID: 626701349}
   score: 0
+  gameOver: {fileID: 0}
+  restartButton: {fileID: 0}
+  newgame: {fileID: 0}
 --- !u!4 &735904790
 Transform:
   m_ObjectHideFlags: 0
@@ -3976,7 +3979,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 16.59699
+  orthographic size: 19.724201
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4341,6 +4344,10 @@ PrefabInstance:
       propertyPath: outside
       value: 
       objectReference: {fileID: 583795502}
+    - target: {fileID: 815818786565238935, guid: a91e2f80e88064a43b3a243346d9b865, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4266216578263082129, guid: a91e2f80e88064a43b3a243346d9b865, type: 3}
       propertyPath: initialDirection.x
       value: -1
@@ -4780,7 +4787,7 @@ TilemapCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453441917}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: d9e5d64d6f21a7149b674d35853d162f, type: 2}
   m_IsTrigger: 0

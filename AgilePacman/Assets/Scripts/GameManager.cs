@@ -161,9 +161,9 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("FirstLevel")) {
          SceneManager.LoadScene ("BetweenLevels");
         }
-        if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("SecondLevel")) {
+        /*if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("SecondLevel")) {
          SceneManager.LoadScene ("BetweenLevels");
-        }
+        }*/
     }
 
 }
