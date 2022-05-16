@@ -7,11 +7,13 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     // Start is called before the first frame update
     public GameObject button;
     public GameObject selectionCanvas;
+    public GameObject gameOverCanvas;
 
     // Start is called before the first frame update
     void Start()
     {
-        selectionCanvas.SetActive(true);
+        //gameOverCanvas.SetActive(false);
+       // selectionCanvas.SetActive(true);
         Time.timeScale = 0;
     }
 
