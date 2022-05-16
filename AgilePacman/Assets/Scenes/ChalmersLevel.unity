@@ -181,9 +181,9 @@ MonoBehaviour:
   score: 0
   gameOver: {fileID: 0}
   livesImages:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1696816262}
+  - {fileID: 1957863635}
+  - {fileID: 1076577624}
   testing: 
 --- !u!114 &229813608 stripped
 MonoBehaviour:
@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -212, y: -57}
+  m_AnchoredPosition: {x: -212, y: -57.000015}
   m_SizeDelta: {x: -820, y: -404.329}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &246918929
