@@ -8,6 +8,7 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public GameObject button;
     public GameObject selectionCanvas;
     public GameObject gameOverCanvas;
+    public CharacterSelection selected;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,8 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         selectionCanvas.SetActive(false);
         // Debug.Log("init start game..");
         Time.timeScale = 1;
+        GameManager.finalCharacter = selected.selectedCharacter;
+
     }
 
     public void OnPointerEnter(PointerEventData eventData)

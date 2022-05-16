@@ -8,8 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public Ghost[] ghosts;
     public MainCharacter[] characters;
-    public int selectedCharacter = 0;
-    public CharacterSelection selected;
+    public static int finalCharacter;
     public Transform pellets;
     public int ghostMultiplier { get; private set; } = 1;
     public int score;
@@ -25,10 +24,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void Update() 
-    {
-        // Making sure that the selectedCharacter integer is updated after character selection.
-        // This prevents the character from changing back to the smurf after each time you die.
-        this.selectedCharacter = selected.selectedCharacter;
+    {       
 
         if (this.lives <= 0 && Input.anyKeyDown) {
             //NewGame();
@@ -85,12 +81,12 @@ public class GameManager : MonoBehaviour
             this.ghosts[i].ResetState();
         }
         for (int i = 0; i < this.characters.Length; i++) {
-            if(i != selectedCharacter){
+            if(i != finalCharacter){
                 this.characters[i].Disable();
             }
         }
 
-        this.characters[selectedCharacter].ResetState();
+        this.characters[finalCharacter].ResetState();
 
     }
 
@@ -100,7 +96,7 @@ public class GameManager : MonoBehaviour
             this.ghosts[i].gameObject.SetActive(false);
         }
 
-        this.characters[selectedCharacter].gameObject.SetActive(false);
+        this.characters[finalCharacter].gameObject.SetActive(false);
 
     }
 
@@ -118,7 +114,7 @@ public class GameManager : MonoBehaviour
 
     public void MainCharacterEaten()
     {
-        this.characters[selectedCharacter].gameObject.SetActive(false);
+        this.characters[finalCharacter].gameObject.SetActive(false);
 
 
         SetLives(this.lives - 1);
@@ -139,7 +135,7 @@ public class GameManager : MonoBehaviour
 
         if (!HasRemaningPellets())
         {
-            this.characters[selectedCharacter].gameObject.SetActive(false);
+            this.characters[finalCharacter].gameObject.SetActive(false);
             //Invoke(nameof(NewRound), 3.0f);
             NextLevel();
         }

@@ -10,7 +10,6 @@ public class Ghost : MonoBehaviour
     public GhostFrightened frightened { get; private set; }
     public GhostBehavior initialBehavior;
     public Transform[] targets;
-    public CharacterSelection selected;
     public int selectedTarget = 0;
     public int points = 200;
 
@@ -29,7 +28,7 @@ public class Ghost : MonoBehaviour
     }
     private void Update(){
         // Making sure that the ghost target the correct main character.
-        this.selectedTarget = selected.selectedCharacter;
+        this.selectedTarget = GameManager.finalCharacter;
     }
 
     public void ResetState()
