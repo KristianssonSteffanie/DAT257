@@ -181,7 +181,7 @@ public class GameManager : MonoBehaviour
          SceneManager.LoadScene ("BetweenLevels");
         }
         if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("SecondLevel")) {
-         SceneManager.LoadScene ("BetweenLevels");
+         SceneManager.LoadScene ("BetweenLevels2");
         }
     }
 
