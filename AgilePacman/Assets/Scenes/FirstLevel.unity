@@ -926,7 +926,6 @@ GameObject:
   - component: {fileID: 303404632}
   - component: {fileID: 303404631}
   - component: {fileID: 303404630}
-  - component: {fileID: 303404629}
   m_Layer: 6
   m_Name: BondMain
   m_TagString: Untagged
@@ -934,20 +933,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &303404629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303404628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lives: []
-  livesRemaining: 0
 --- !u!114 &303404630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3668,7 +3653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3784,7 +3769,6 @@ GameObject:
   - component: {fileID: 578154583}
   - component: {fileID: 578154582}
   - component: {fileID: 578154581}
-  - component: {fileID: 578154580}
   m_Layer: 6
   m_Name: LuckyLukeMain
   m_TagString: Untagged
@@ -3792,20 +3776,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &578154580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 578154579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lives: []
-  livesRemaining: 0
 --- !u!114 &578154581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3974,7 +3944,6 @@ GameObject:
   - component: {fileID: 583781610}
   - component: {fileID: 583781609}
   - component: {fileID: 583781608}
-  - component: {fileID: 583781607}
   m_Layer: 6
   m_Name: SmurfMain
   m_TagString: Untagged
@@ -3982,20 +3951,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &583781607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583781606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lives: []
-  livesRemaining: 0
 --- !u!114 &583781608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8175,7 +8130,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 56}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &963108759
 MonoBehaviour:
@@ -8207,7 +8162,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.8207547, g: 0.49545497, b: 0.17421682, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9346,7 +9301,6 @@ GameObject:
   - component: {fileID: 1415298450}
   - component: {fileID: 1415298449}
   - component: {fileID: 1415298448}
-  - component: {fileID: 1415298447}
   m_Layer: 6
   m_Name: MarioMain
   m_TagString: Untagged
@@ -9354,20 +9308,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1415298447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415298446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4943fa259311546b88bd1f7e7de7edb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lives: []
-  livesRemaining: 0
 --- !u!114 &1415298448
 MonoBehaviour:
   m_ObjectHideFlags: 0

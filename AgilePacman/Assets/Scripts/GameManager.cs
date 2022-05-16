@@ -15,11 +15,8 @@ public class GameManager : MonoBehaviour
     public int score;
     public int lives { get; private set; }
     public GameObject gameOver;
-    //public GameObject restartButton;
-    bool gameIsStarted;
     public Image[] livesImages;
     public int[] testing;
-    //public GameObject canvas;
 
     private void Start() 
     {
@@ -36,40 +33,38 @@ public class GameManager : MonoBehaviour
         if (this.lives <= 0 && Input.anyKeyDown) {
             //NewGame();
             gameOver.SetActive(true);
-            gameIsStarted = false;
     
           Time.timeScale = 0;
-          //if(Input.restartButton)
           ResetState();
             NewGame();
-//canvas.SetActive(false);
-
-        //if(restartButton.clicked==true)
-        //NewGame();
-        //gameOver.SetActive(false);
-
 
         }
         
     }
 
-     public void LoseLifeImage(){ //Method to remove one life visually
-       //lives--;
+     private void LoseLifeImage(){ //Method to remove one life visually
        livesImages[lives].enabled=false;
        if(lives == 0){
            Debug.Log("You lost");
        }
    }
 
-    private void NewGame()
-    {
-      //  gameOver.SetActive(false);
+   private void ResetLifeImages(){ //Method to enable all life images again
+       for(int i=0; i<=livesImages.Length-1; i++){
+        livesImages[i].enabled=true;
+   }
+   }
+
+
+    private void NewGame(){
         ScoreKeeper.setScore(0);
         SetLives(3);
         NewRound();
+        
+        
     }
 
-// loop through all pellets and turn them back on
+// loop through all pellets and turn them back on + reset visual life counter
     private void NewRound()
     {
         // loop through every child of pellets-form
@@ -78,6 +73,7 @@ public class GameManager : MonoBehaviour
         }
 
         ResetState();
+        ResetLifeImages();
     }
 
 // reset the state of main character and ghosts when main character dies
