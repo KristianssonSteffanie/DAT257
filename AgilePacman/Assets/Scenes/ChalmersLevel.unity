@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -212, y: -57.000015}
+  m_AnchoredPosition: {x: -212, y: -57.00003}
   m_SizeDelta: {x: -820, y: -404.329}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &246918929
@@ -16951,6 +16951,7 @@ MonoBehaviour:
   selectionCanvas: {fileID: 0}
   gameOverCanvas: {fileID: 0}
   selected: {fileID: 0}
+  isPausMenu: 1
 --- !u!114 &1286376570
 MonoBehaviour:
   m_ObjectHideFlags: 0

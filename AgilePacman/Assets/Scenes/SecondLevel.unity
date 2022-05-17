@@ -11968,6 +11968,7 @@ MonoBehaviour:
   selectionCanvas: {fileID: 0}
   gameOverCanvas: {fileID: 0}
   selected: {fileID: 0}
+  isPausMenu: 1
 --- !u!114 &1597520858
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public GameObject selectionCanvas;
     public GameObject gameOverCanvas;
     public CharacterSelection selected;
+    public bool isPausMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +30,9 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         selectionCanvas.SetActive(false);
         // Debug.Log("init start game..");
         Time.timeScale = 1;
-        GameManager.finalCharacter = selected.selectedCharacter;
-
+        if(!isPausMenu){
+            GameManager.finalCharacter = selected.selectedCharacter;
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)

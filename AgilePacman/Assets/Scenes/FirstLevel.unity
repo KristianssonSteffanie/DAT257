@@ -559,7 +559,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &193222356
@@ -7684,6 +7684,7 @@ MonoBehaviour:
   selectionCanvas: {fileID: 412532114}
   gameOverCanvas: {fileID: 184416911}
   selected: {fileID: 1800515560}
+  isPausMenu: 0
 --- !u!114 &876152039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8221,6 +8222,7 @@ MonoBehaviour:
   selectionCanvas: {fileID: 412532114}
   gameOverCanvas: {fileID: 184416911}
   selected: {fileID: 0}
+  isPausMenu: 1
 --- !u!114 &990102079
 MonoBehaviour:
   m_ObjectHideFlags: 0
