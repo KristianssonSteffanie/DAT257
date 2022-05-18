@@ -15,7 +15,7 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     void Start()
     {
         //gameOverCanvas.SetActive(false);
-       // selectionCanvas.SetActive(true);
+        //selectionCanvas.SetActive(true);
         Time.timeScale = 0;
     }
 
@@ -27,10 +27,9 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public void click()
     {
-        selectionCanvas.SetActive(false);
-        // Debug.Log("init start game..");
         Time.timeScale = 1;
         if(!isPausMenu){
+            selectionCanvas.SetActive(false);
             GameManager.finalCharacter = selected.selectedCharacter;
         }
     }

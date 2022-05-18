@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
    }
 
 
-    private void NewGame(){
+    public void NewGame(){
         ScoreKeeper.setScore(0);
         SetLives(3);
         NewRound();
