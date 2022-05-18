@@ -22,7 +22,6 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public void click()
@@ -31,6 +30,7 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         if(!isPausMenu){
             selectionCanvas.SetActive(false);
             GameManager.finalCharacter = selected.selectedCharacter;
+            Debug.Log("final: " + GameManager.finalCharacter);
         }
     }
 
