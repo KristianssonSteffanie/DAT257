@@ -26,16 +26,21 @@ public class CharacterSelection : MonoBehaviour
     }
     public void NextCharacter()
     {
-        characters[selectedCharacter].Disable();
+        for (int i = 0; i < characters.Length; i++){
+            characters[selectedCharacter].Disable();
+        }
         characterImages[selectedCharacter].enabled = false;
         selectedCharacter = (selectedCharacter + 1) % characters.Length;
         characters[selectedCharacter].ResetState();
         characterImages[selectedCharacter].enabled = true;
+        Debug.Log("selected: " + selectedCharacter);
     }
 
     public void PreviousCharacter()
     {
-        characters[selectedCharacter].Disable();
+        for (int i = 0; i < characters.Length; i++){
+            characters[selectedCharacter].Disable();
+        }
         characterImages[selectedCharacter].enabled = false;
         selectedCharacter--;
         if (selectedCharacter < 0){
@@ -43,6 +48,7 @@ public class CharacterSelection : MonoBehaviour
         }
         characters[selectedCharacter].ResetState();
         characterImages[selectedCharacter].enabled = true;
+        Debug.Log("selected: " + selectedCharacter);
     }
 
     public void OnNextPointerEnter()
