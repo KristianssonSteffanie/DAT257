@@ -179,6 +179,10 @@ public class GameManager : MonoBehaviour
         else if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("SecondLevel")) {
         SceneManager.LoadScene ("BetweenNextLevel");
         }
+        else if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("ChalmersLevel"))
+        {
+            SceneManager.LoadScene("VictoryScreen");
+        }
     }
 
 }
