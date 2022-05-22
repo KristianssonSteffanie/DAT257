@@ -7683,6 +7683,7 @@ MonoBehaviour:
   button: {fileID: 876152037}
   selectionCanvas: {fileID: 412532114}
   gameOverCanvas: {fileID: 184416911}
+  pausMenuCanvas: {fileID: 447144937}
   selected: {fileID: 1800515560}
   isPausMenu: 0
 --- !u!114 &876152039
@@ -8221,6 +8222,7 @@ MonoBehaviour:
   button: {fileID: 990102076}
   selectionCanvas: {fileID: 412532114}
   gameOverCanvas: {fileID: 184416911}
+  pausMenuCanvas: {fileID: 0}
   selected: {fileID: 0}
   isPausMenu: 1
 --- !u!114 &990102079
@@ -9409,6 +9411,7 @@ MonoBehaviour:
   button: {fileID: 1491863252}
   canvas: {fileID: 1189832638}
   selectionCanvas: {fileID: 412532114}
+  pausMenuCanvas: {fileID: 447144937}
 --- !u!114 &1491863255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10468,6 +10471,8 @@ MonoBehaviour:
   - {fileID: 303404630}
   - {fileID: 1415298448}
   - {fileID: 578154581}
+  mainCanvas: {fileID: 1189832638}
+  selectionCanvas: {fileID: 412532114}
   characterImages:
   - {fileID: 1431639445}
   - {fileID: 1615409389}

@@ -8,6 +8,7 @@ public class NewGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     bool gameIsStarted;
     public GameObject canvas;
     public GameObject selectionCanvas;
+    public GameObject pausMenuCanvas;
 
 
     // Start is called before the first frame update
@@ -16,6 +17,7 @@ public class NewGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         //gameIsStarted = false;
         canvas.SetActive(true);
         selectionCanvas.SetActive(false);
+        pausMenuCanvas.SetActive(false);
 
         Time.timeScale = 0;
     }

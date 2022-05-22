@@ -8,14 +8,13 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public GameObject button;
     public GameObject selectionCanvas;
     public GameObject gameOverCanvas;
+    public GameObject pausMenuCanvas;
     public CharacterSelection selected;
     public bool isPausMenu;
 
     // Start is called before the first frame update
     void Start()
     {
-        //gameOverCanvas.SetActive(false);
-        //selectionCanvas.SetActive(true);
         Time.timeScale = 0;
     }
 
@@ -31,6 +30,7 @@ public class StartGame : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             selectionCanvas.SetActive(false);
             GameManager.finalCharacter = selected.selectedCharacter;
             Debug.Log("final: " + GameManager.finalCharacter);
+            pausMenuCanvas.SetActive(true);
         }
     }
 

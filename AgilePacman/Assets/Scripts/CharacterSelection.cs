@@ -8,7 +8,8 @@ public class CharacterSelection : MonoBehaviour
     public GameObject prevButton;
     public StartGame startButton;
     public MainCharacter[] characters;
-
+    public GameObject mainCanvas;
+    public GameObject selectionCanvas;
     public Image[] characterImages; 
     public int selectedCharacter = 0;
 
@@ -22,6 +23,10 @@ public class CharacterSelection : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Return)){
             startButton.click();
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape)){
+            mainCanvas.SetActive(true);
+            selectionCanvas.SetActive(false);
         }
     }
     public void NextCharacter()
