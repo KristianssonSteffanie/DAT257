@@ -27,11 +27,11 @@ public class GameManager : MonoBehaviour
     {       
 
         if (this.lives <= 0 && Input.anyKeyDown) {
-            //NewGame();
+          //NewGame();
             gameOver.SetActive(true);
-    
-          Time.timeScale = 0;
-          ResetState();
+
+            Time.timeScale = 0;
+            ResetState();
             NewGame();
 
         }

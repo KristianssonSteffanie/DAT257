@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChalmersLevel.unity
     guid: 57073dac3bedd4b11915967d03e10f4e
+  - enabled: 1
+    path: Assets/Scenes/VictoryScreen.unity
+    guid: 77a38fc5d703de74891dbbe20108f637
   m_configObjects: {}
