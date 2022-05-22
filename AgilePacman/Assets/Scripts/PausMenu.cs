@@ -12,7 +12,7 @@ public class PausMenu : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-           if( GameIsPaused)
+           if(GameIsPaused)
            {
                Resume();
            } 
