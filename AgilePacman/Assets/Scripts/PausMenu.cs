@@ -10,9 +10,9 @@ public class PausMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) )
         {
-           if( GameIsPaused)
+           if(GameIsPaused)
            {
                Resume();
            } 
@@ -25,7 +25,7 @@ public class PausMenu : MonoBehaviour
 
     void Resume()
     {
-          pauseMenuUI.SetActive(false);
+        pauseMenuUI.SetActive(false);
         Time.timeScale =1f;
         GameIsPaused=false;
     }
