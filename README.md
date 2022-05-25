@@ -1,6 +1,8 @@
 # DAT257 - Pixies
 Agile software project management in Unity using v.2022.1.0b16 for couse DAT257.
 
+All source code is in the folder "/AgilePacman/Assets". C# scripts are in the subfolder "/Scripts".
+
 All meeting documents are in the folder "Meetings".
 
 The weekly individual reflections are in the folder "IndividualReflections/<student>" for respective student.
