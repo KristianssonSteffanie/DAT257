@@ -1,0 +1,11 @@
+What do I want to learn or understand better?
+So far we've worked a lot on "production" things such as user stories and trying to make them better, and they have improved a lot, so now I feel like it's time to focus more on reflection and think about things such as what we should do differently if we're starting over. 
+
+How can I help someone else, or the entire team, to learn something new?
+I think at this point, I'm mostly able to help someone else learn by promoting reflection and discussion during our meetings and throughout the sprint. 
+
+What is my contribution towards the team’s use of Scrum?
+My main contribution is reflection and discussion about our use of scrum and how we can improve it for the future, if we're all talking about it, that means everyone gets a chance to hear what the others think and that's likely to help us learn. 
+
+What is my contribution towards the team’s deliveries?
+This sprint my main contribution to the deliveries was scorekeeping and more tools to help the user navigate the application and have a better experience using our product. 

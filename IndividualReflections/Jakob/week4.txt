@@ -1,0 +1,12 @@
+What do I want to learn or understand better?
+We are still working on perfecting our user stories, getting the size of them right has been a challenge, and also making them independent of each other has been difficult, since many features we want to implement require other stuff to be done. 
+
+How can I help someone else, or the entire team, to learn something new?
+While a lot of the other teammates are working in pairs, I'm working on my own which means I don't directly help someone learn something new while working, but I try my best to provide my thoughts and ideas if someone has a question or during meetings where everyone is present. 
+
+What is my contribution towards the team’s use of Scrum?
+I contribute to our use of scrum each week by looking at the past scrums and trying to refine our process and adapt it 
+to our group, whilst maintaining the "scrum-process". This week I learned that our user stories were quite dependent on each other, which made it harder for some members to follow the scrum process and have something to deliver by the end of the sprint. 
+
+What is my contribution towards the team’s deliveries?
+My contribution is creating menus so that the user can navigate the in the application. 
